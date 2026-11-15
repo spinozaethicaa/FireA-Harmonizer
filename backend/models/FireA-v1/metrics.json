@@ -1,0 +1,128 @@
+{
+ "evaluation": "Test bölgeleri eğitime girmedi (coğrafi dışarıda bırakma). Değerler değerlendirme modelinden.",
+ "split_sizes": {
+  "train": 283341,
+  "val": 55423,
+  "test": 61064,
+  "final": 389974
+ },
+ "final_excludes": [
+  "east_med"
+ ],
+ "region_cap": 50000,
+ "test": {
+  "FireA": {
+   "n_clusters": 61064,
+   "poisson_deviance": 0.7639745965690056,
+   "mae": 0.4677014177847146,
+   "rmse": 0.8989931520520239,
+   "auc_detection": 0.8907345402991521,
+   "brier_detection": 0.11078974590935246,
+   "interval80_coverage": 0.9490862046377571,
+   "observed_detection_rate": 0.2490501768636185,
+   "predicted_detection_rate": 0.25334985372123664,
+   "region_day_total_ratio_median": 1.133442967776774,
+   "region_day_total_abs_pct_err_median": 20.851354017167058,
+   "n_region_days_eval": 110,
+   "total_observed": 34634,
+   "total_predicted": 35426.445433299465
+  },
+  "power_law": {
+   "n_clusters": 61064,
+   "poisson_deviance": 1.242766261100769,
+   "mae": 0.6628211131057077,
+   "rmse": 1.1755614225281643,
+   "auc_detection": 0.7535702572043105,
+   "brier_detection": 0.16544447512931437,
+   "interval80_coverage": 0.908489453687934,
+   "observed_detection_rate": 0.2490501768636185,
+   "predicted_detection_rate": 0.3171413540840149,
+   "region_day_total_ratio_median": 1.0714655146696523,
+   "region_day_total_abs_pct_err_median": 35.40607317529544,
+   "n_region_days_eval": 110,
+   "total_observed": 34634,
+   "total_predicted": 33984.6640625,
+   "coef": {
+    "a": -2.868990898132324,
+    "b": 1.253366231918335
+   }
+  },
+  "gbm": {
+   "n_clusters": 61064,
+   "poisson_deviance": 0.7882404783234453,
+   "mae": 0.47790221876658984,
+   "rmse": 0.961043458228722,
+   "auc_detection": 0.8893087648494493,
+   "brier_detection": 0.11262458235668509,
+   "interval80_coverage": 0.9383433774400629,
+   "observed_detection_rate": 0.2490501768636185,
+   "predicted_detection_rate": 0.2715239326774857,
+   "region_day_total_ratio_median": 1.072412968872112,
+   "region_day_total_abs_pct_err_median": 22.529884885962513,
+   "n_region_days_eval": 110,
+   "total_observed": 34634,
+   "total_predicted": 33955.92493383892
+  }
+ },
+ "test_per_region_FireA": {},
+ "history_eval": [
+  {
+   "epoch": 1,
+   "train_nll": 0.4931885763548888,
+   "sec": 266.0,
+   "val_nll": 0.5630340115824798
+  },
+  {
+   "epoch": 2,
+   "train_nll": 0.4615604769130441,
+   "sec": 254.7,
+   "val_nll": 0.5600296415580898
+  },
+  {
+   "epoch": 3,
+   "train_nll": 0.4573772827542723,
+   "sec": 272.0,
+   "val_nll": 0.5559643565671709
+  },
+  {
+   "epoch": 4,
+   "train_nll": 0.45325213828145705,
+   "sec": 272.3,
+   "val_nll": 0.5534749156020515
+  },
+  {
+   "epoch": 5,
+   "train_nll": 0.4516792467042595,
+   "sec": 269.7,
+   "val_nll": 0.5524399903881324
+  }
+ ],
+ "history_final": [
+  {
+   "epoch": 1,
+   "train_nll": 0.5486899748945652,
+   "sec": 351.1
+  },
+  {
+   "epoch": 2,
+   "train_nll": 0.5095772073401521,
+   "sec": 389.2
+  },
+  {
+   "epoch": 3,
+   "train_nll": 0.5043623735495968,
+   "sec": 373.2
+  },
+  {
+   "epoch": 4,
+   "train_nll": 0.5010055774481696,
+   "sec": 352.9
+  },
+  {
+   "epoch": 5,
+   "train_nll": 0.4990281417608314,
+   "sec": 356.9
+  }
+ ],
+ "train_minutes": 30.6
+}

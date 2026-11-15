@@ -1,0 +1,359 @@
+{
+ "name": "FireA-v1",
+ "n_params": 2122178,
+ "arch": {
+  "n_tok": 12,
+  "n_ctx": 25,
+  "d": 192,
+  "layers": 4,
+  "heads": 6,
+  "dropout": 0.1
+ },
+ "token_features": [
+  "log_frp",
+  "frp_missing",
+  "b4",
+  "b5",
+  "b45",
+  "scan",
+  "track",
+  "conf_l",
+  "conf_n",
+  "conf_h",
+  "dx_km",
+  "dy_km"
+ ],
+ "context_features": [
+  "log_n",
+  "log_frp_sum",
+  "log_frp_max",
+  "log_frp_mean",
+  "extent_km",
+  "v_scan",
+  "v_track",
+  "frac_l",
+  "frac_n",
+  "frac_h",
+  "day",
+  "noaa20",
+  "b4_mean",
+  "b4_max",
+  "b45_mean",
+  "m_scan",
+  "m_track",
+  "dt_h",
+  "abs_dt_h",
+  "sol_sin",
+  "sol_cos",
+  "abs_lat",
+  "season_sin",
+  "season_cos",
+  "log_nbr25"
+ ],
+ "max_tokens": 64,
+ "ctx_mean": [
+  1.1041992902755737,
+  2.3425650596618652,
+  1.9214935302734375,
+  1.7978280782699585,
+  0.5620626211166382,
+  0.4549958109855652,
+  0.46456006169319153,
+  0.13892798125743866,
+  0.8274002075195312,
+  0.03365958854556084,
+  0.7861652374267578,
+  0.5163779854774475,
+  333.97216796875,
+  337.81915283203125,
+  34.11507034301758,
+  1.9616750478744507,
+  1.313842535018921,
+  0.1183459609746933,
+  0.42136895656585693,
+  -0.18320725858211517,
+  -0.5369296073913574,
+  19.21533966064453,
+  0.487878680229187,
+  0.16558793187141418,
+  2.6261157989501953
+ ],
+ "ctx_std": [
+  0.5977753400802612,
+  1.241755485534668,
+  0.8948652148246765,
+  0.7798649668693542,
+  0.9865178465843201,
+  0.08048257976770401,
+  0.10698918253183365,
+  0.31352174282073975,
+  0.33168867230415344,
+  0.13863256573677063,
+  0.41031572222709656,
+  0.49969956278800964,
+  14.957169532775879,
+  16.626306533813477,
+  11.473281860351562,
+  0.9372541308403015,
+  0.268283873796463,
+  0.48537251353263855,
+  0.26813891530036926,
+  0.3400905728340149,
+  0.7500192523002625,
+  14.936822891235352,
+  0.5919552445411682,
+  0.6197156310081482,
+  1.527895212173462
+ ],
+ "geometry_samples": [
+  [
+   1.039322018623352,
+   1.012662649154663
+  ],
+  [
+   1.0891691446304321,
+   1.0443514585494995
+  ],
+  [
+   1.133026123046875,
+   1.0620745420455933
+  ],
+  [
+   1.1793237924575806,
+   1.103369116783142
+  ],
+  [
+   1.2417244911193848,
+   1.0933579206466675
+  ],
+  [
+   1.3170667886734009,
+   1.1214015483856201
+  ],
+  [
+   1.4116274118423462,
+   1.1715925931930542
+  ],
+  [
+   1.5289716720581055,
+   1.2022825479507446
+  ],
+  [
+   1.6772295236587524,
+   1.252460241317749
+  ],
+  [
+   1.858654499053955,
+   1.311571478843689
+  ],
+  [
+   2.0676419734954834,
+   1.3585046529769897
+  ],
+  [
+   2.3472366333007812,
+   1.4577512741088867
+  ],
+  [
+   2.663179397583008,
+   1.5551213026046753
+  ],
+  [
+   3.0203793048858643,
+   1.6286911964416504
+  ],
+  [
+   3.5706255435943604,
+   1.7819114923477173
+  ],
+  [
+   4.141763210296631,
+   1.8792730569839478
+  ]
+ ],
+ "best_epoch": 5,
+ "trained_at_utc": "2026-11-14T21:44:30Z",
+ "target": "Aqua-MODIS tespit sayısı / VIIRS geçiş kümesi (|Δt| ≤ 60 dk)",
+ "regions": [
+  {
+   "key": "east_med",
+   "name": "Doğu Akdeniz (Türkiye, Yunanistan)",
+   "biome": "Akdeniz çalılık/orman",
+   "split": "test",
+   "bbox": [
+    19,
+    34,
+    45,
+    43
+   ]
+  },
+  {
+   "key": "iberia",
+   "name": "İber Yarımadası",
+   "biome": "Akdeniz çalılık/orman",
+   "split": "train",
+   "bbox": [
+    -10,
+    36,
+    4,
+    44
+   ]
+  },
+  {
+   "key": "california",
+   "name": "Kaliforniya",
+   "biome": "Akdeniz çalılık/orman",
+   "split": "train",
+   "bbox": [
+    -125,
+    32,
+    -114,
+    42
+   ]
+  },
+  {
+   "key": "canada",
+   "name": "Kanada boreal",
+   "biome": "Boreal orman",
+   "split": "train",
+   "bbox": [
+    -125,
+    52,
+    -100,
+    62
+   ]
+  },
+  {
+   "key": "siberia",
+   "name": "Sibirya",
+   "biome": "Boreal orman",
+   "split": "test",
+   "bbox": [
+    100,
+    50,
+    130,
+    62
+   ]
+  },
+  {
+   "key": "amazon",
+   "name": "Amazon yay",
+   "biome": "Tropikal orman / ormansızlaşma",
+   "split": "train",
+   "bbox": [
+    -65,
+    -15,
+    -48,
+    -5
+   ]
+  },
+  {
+   "key": "cerrado",
+   "name": "Cerrado",
+   "biome": "Tropikal savan",
+   "split": "train",
+   "bbox": [
+    -50,
+    -22,
+    -42,
+    -12
+   ]
+  },
+  {
+   "key": "central_africa",
+   "name": "Orta Afrika (Angola, Zambiya, KDC)",
+   "biome": "Savan",
+   "split": "train",
+   "bbox": [
+    15,
+    -15,
+    30,
+    -5
+   ]
+  },
+  {
+   "key": "sahel",
+   "name": "Batı Afrika / Sahel",
+   "biome": "Savan",
+   "split": "train",
+   "bbox": [
+    -10,
+    7,
+    10,
+    14
+   ]
+  },
+  {
+   "key": "se_asia",
+   "name": "Güneydoğu Asya (Myanmar, Tayland, Laos)",
+   "biome": "Tropikal kuru orman / tarım",
+   "split": "train",
+   "bbox": [
+    95,
+    15,
+    106,
+    23
+   ]
+  },
+  {
+   "key": "north_australia",
+   "name": "Kuzey Avustralya",
+   "biome": "Savan",
+   "split": "test",
+   "bbox": [
+    125,
+    -20,
+    145,
+    -12
+   ]
+  },
+  {
+   "key": "punjab",
+   "name": "Hindistan / Pencap",
+   "biome": "Tarım yakmaları",
+   "split": "train",
+   "bbox": [
+    73,
+    28,
+    78,
+    32
+   ]
+  },
+  {
+   "key": "east_europe",
+   "name": "Doğu Avrupa bozkırı",
+   "biome": "Tarım / bozkır",
+   "split": "train",
+   "bbox": [
+    28,
+    44,
+    45,
+    54
+   ]
+  },
+  {
+   "key": "mexico",
+   "name": "Meksika / Orta Amerika",
+   "biome": "Tropikal kuru orman",
+   "split": "train",
+   "bbox": [
+    -100,
+    14,
+    -86,
+    22
+   ]
+  },
+  {
+   "key": "indonesia",
+   "name": "Endonezya (Sumatra, Kalimantan)",
+   "biome": "Turbalık / tropikal orman",
+   "split": "train",
+   "bbox": [
+    100,
+    -5,
+    118,
+    3
+   ]
+  }
+ ]
+}
