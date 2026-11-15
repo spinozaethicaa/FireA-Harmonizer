@@ -394,7 +394,7 @@ docs/
 - Base map: **Esri** World Dark Gray (Esri, HERE, Garmin, © OpenStreetMap contributors).
 - References: Giglio et al. 2016 (MODIS Collection 6 active fire product); Schroeder et al. 2014 (VIIRS 375 m active fire product); Lee et al. 2019 (Set Transformer).
 
-Made for the NASA Space Apps Challenge 2026. There is no license file yet; one should be added before the project is published.
+Made for the NASA Space Apps Challenge 2026.
 
 ---
 

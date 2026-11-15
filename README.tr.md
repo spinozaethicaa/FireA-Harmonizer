@@ -394,7 +394,7 @@ docs/
 - Altlık harita: **Esri** World Dark Gray (Esri, HERE, Garmin, © OpenStreetMap katkıcıları).
 - Kaynaklar: Giglio vd. 2016 (MODIS Collection 6 aktif yangın ürünü); Schroeder vd. 2014 (VIIRS 375 m aktif yangın ürünü); Lee vd. 2019 (Set Transformer).
 
-NASA Space Apps Challenge 2026 için hazırlandı. Henüz bir lisans dosyası yok; proje yayımlanmadan önce bir lisans eklenmeli.
+NASA Space Apps Challenge 2026 için hazırlandı.
 
 ---
 
